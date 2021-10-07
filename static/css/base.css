@@ -1,0 +1,112 @@
+/* ---------------------------------------- General Styling */
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/poster-art-home-banner.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position-y: 0px;
+}
+
+h1,h2,h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    color: #111111;
+    letter-spacing: -2px;
+}
+
+p {
+    color: #5B5B5B;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+}
+
+i {
+    font-size: 22px;
+    color: #5B5B5B;
+}
+
+.shop-button {
+    background: #111111;
+    color: #fff;
+    width: 250px;
+}
+
+.shop-button:hover{
+    color: #fff;
+    border: solid 2px #111111;
+}
+
+/* ---------------------------------------- Header Styling */
+
+
+.quantity {
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    font-size: 15px;
+    top: 28px;
+    right: 40px;
+    background: #111111;
+}
+
+.border-line {
+    border-bottom: solid 1px #ffffff;
+    background: #fff;
+}
+
+.nav-link {
+    padding: 1rem 2rem;
+}
+
+.nav-link-mobile {
+    padding: 1rem 0rem;
+}
+
+.navbar-toggler {
+    padding: 0px!important
+}
+
+.promo-banner  {
+    background: #6D7F80;
+}
+
+.promo-text {
+    color: #fff!important;
+    text-transform: uppercase;
+}
+
+.nav-icons {
+    padding-left: 20px;
+}
+
+.nav-icons-mobile {
+    padding-left: 5px;
+}
+
+.nav-search {
+    color: #111111;
+}
+
+.border-black {
+    color: #111111;
+}
+
+.menu-text {
+    color: #5B5B5B;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 20px;
+}
+
+/* ---------------------------------------- Banner Styling */
+
+.header-text {
+    font-size: 60px;
+    color: #fff;
+}

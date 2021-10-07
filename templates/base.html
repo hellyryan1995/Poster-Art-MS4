@@ -15,6 +15,11 @@
 
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;900&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
     {% block extra_css %}
@@ -32,7 +37,12 @@
     <title>Poster Art {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top"></header>
+    <header class="container-fluid fixed-top d-none d-lg-block">
+        {% include 'includes/top-header.html' %}
+    </header>
+    <header class="container-fluid fixed-top d-lg-none ">
+      {% include 'includes/mobile-top-header.html' %}
+    </header>
 
     {% if messages %}
         <div class="message-container"></div>

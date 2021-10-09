@@ -53,6 +53,19 @@ i {
     background: #111111;
 }
 
+.dropdown-menu.show {
+    display: block;
+    border-radius: 0;
+}
+
+.dropdown-menu.show.user {
+    transform: translate3d(-82px, 28px, 0px)!important;
+}
+
+.dropdown-menu.show.search {
+    transform: translate3d(0px, 90px, 0px)!important;
+}
+
 .border-line {
     border-bottom: solid 1px #ffffff;
     background: #fff;
@@ -70,6 +83,13 @@ i {
     padding: 0px!important
 }
 
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    border-radius: 0;
+    border: none;
+}
+
 .promo-banner  {
     background: #6D7F80;
 }
@@ -81,10 +101,20 @@ i {
 
 .nav-icons {
     padding-left: 20px;
+    text-decoration: none;
+}
+
+.nav-icons i:hover {
+    color: #111111;
+}
+
+.nav-icons-mobile i:hover {
+    color: #111111;
 }
 
 .nav-icons-mobile {
     padding-left: 5px;
+    text-decoration: none;
 }
 
 .nav-search {
@@ -102,11 +132,22 @@ i {
     font-weight: 400;
     font-family: 'Work Sans', sans-serif;
     padding-left: 20px;
+    text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #111111;
+}
+
+a {
+    text-decoration: none;
+}
 /* ---------------------------------------- Banner Styling */
 
 .header-text {
     font-size: 60px;
     color: #fff;
+    text-shadow: 2px 4px 4px rgba(0,0,0,0.2),
+                 0px -5px 10px rgba(255,255,255,0.15);
 }

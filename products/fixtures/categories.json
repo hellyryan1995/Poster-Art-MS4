@@ -1,0 +1,58 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "liguify",
+        "friendly_name": "Liquify"
+      }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+          "name": "cubism",
+          "friendly_name": "Cubism"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+          "name": "gradients",
+          "friendly_name": "Gradients"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+          "name": "geometric",
+          "friendly_name": "Geometric"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+          "name": "collage",
+          "friendly_name": "Collage"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+          "name": "frames",
+          "friendly_name": "Frames"
+        }
+    }, 
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+          "name": "new_arrivals",
+          "friendly_name": "New Arrivals"
+        }
+      } 
+]

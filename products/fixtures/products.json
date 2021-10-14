@@ -1,0 +1,446 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "lynum1",
+        "name": "Sunset",
+        "description": "Stunning Liguify art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+        "price": 16.00,
+        "category": 1,
+        "image": "liquify-sunset.jpg"
+      }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+          "sku": "lynum2",
+          "name": "Oil Leak",
+          "description": "Stunning Liguify art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 1,
+          "image": "liquify-oil.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+          "sku": "lynum3",
+          "name": "The Field",
+          "description": "Stunning Liguify art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 1,
+          "image": "liquify-the-field.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+          "sku": "lynum4",
+          "name": "Elements",
+          "description": "Stunning Liguify art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 1,
+          "image": "liquify-elements.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+          "sku": "lynum5",
+          "name": "The Canyon",
+          "description": "Stunning Liguify art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 1,
+          "image": "liguify-canyon.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+          "sku": "lynum6",
+          "name": "Coral Reef",
+          "description": "Stunning Liguify art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 1,
+          "image": "liquify-coral.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+          "sku": "cmnum7",
+          "name": "Japan",
+          "description": "Stunning Cubism art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 2,
+          "image": "cubism-japan.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+          "sku": "cmnum8",
+          "name": "Pipeline",
+          "description": "Stunning Cubism art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 2,
+          "image": "cubism-pipeline.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+          "sku": "cmnum9",
+          "name": "Sunrise",
+          "description": "Stunning Cubism art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 2,
+          "image": "cubism-sunrise.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+          "sku": "cmnum10",
+          "name": "The Window",
+          "description": "Stunning Cubism art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 2,
+          "image": "cubism-window.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+          "sku": "cmnum11",
+          "name": "Forest Fire",
+          "description": "Stunning Cubism art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 2,
+          "image": "cubism-forrest-fire.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+          "sku": "cmnum12",
+          "name": "The Reveal",
+          "description": "Stunning Cubism art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 2,
+          "image": "cubism-gender.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+          "sku": "gdnum13",
+          "name": "Cuba",
+          "description": "Stunning Gradient art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 3,
+          "image": "gradient-cuba.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+          "sku": "gdnum14",
+          "name": "Flower",
+          "description": "Stunning Gradient art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 3,
+          "image": "gradient-flower.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+          "sku": "gdnum15",
+          "name": "Rainbow",
+          "description": "Stunning Gradient art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 3,
+          "image": "gradient-rainbow.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+          "sku": "gdnum16",
+          "name": "Red Line",
+          "description": "Stunning Gradient art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 3,
+          "image": "gradient-red-line.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+          "sku": "gdnum17",
+          "name": "Tropical",
+          "description": "Stunning Gradient art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 3,
+          "image": "gradient-tropical.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+          "sku": "gdnum18",
+          "name": "Vibrant",
+          "description": "Stunning Gradient art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 3,
+          "image": "gradient-vibrant.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+          "sku": "gcnum19",
+          "name": "Brass",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 4,
+          "image": "geometric-coper.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+          "sku": "gcnum20",
+          "name": "Illusion",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 4,
+          "image": "geometric-illusion.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+          "sku": "gcnum21",
+          "name": "Purple",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 4,
+          "image": "geometric-purple.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+          "sku": "gcnum22",
+          "name": "Edges",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 4,
+          "image": "geometric-ryb.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+          "sku": "gcnum23",
+          "name": "Summer",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 4,
+          "image": "geometric-summer.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+          "sku": "cenum24",
+          "name": "Vision",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 5,
+          "image": "collage-eyes.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+          "sku": "cenum25",
+          "name": "Festival",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 5,
+          "image": "collage-festival.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+          "sku": "cenum26",
+          "name": "Touch",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 5,
+          "image": "collage-touch.jpg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+          "sku": "cenum27",
+          "name": "Cherry",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 5,
+          "image": "collage-cherry.jpg"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+          "sku": "fmnum28",
+          "name": "Black Frame",
+          "description": "Display your printed poster within our potrait or landscape wall hung frame.",
+          "price": 20.00,
+          "category": 6,
+          "image": "black-frame.jpg"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+          "sku": "fmnum29",
+          "name": "Gold Frame",
+          "description": "Display your printed poster within our potrait or landscape wall hung frame.",
+          "price": 20.00,
+          "category": 6,
+          "image": "gold-frame.jpg"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+          "sku": "fmnum30",
+          "name": "Marble Frame",
+          "description": "Display your printed poster within our potrait or landscape wall hung frame.",
+          "price": 20.00,
+          "category": 6,
+          "image": "marble-frame.jpg"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+          "sku": "fmnum31",
+          "name": "Rainbow Frame",
+          "description": "Display your printed poster within our potrait or landscape wall hung frame.",
+          "price": 20.00,
+          "category": 6,
+          "image": "rainbow-frame.jpg"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+          "sku": "fmnum32",
+          "name": "Wood Frame",
+          "description": "Display your printed poster within our potrait or landscape wall hung frame.",
+          "price": 20.00,
+          "category": 6,
+          "image": "wood-frame.jpg"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+          "sku": "nanum33",
+          "name": "The Cave",
+          "description": "Stunning Cubism art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 7,
+          "image": "cubism-cave.jpg"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+          "sku": "nanum34",
+          "name": "Bricks",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 7,
+          "image": "geometric-bricks.jpg"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+          "sku": "nanum35",
+          "name": "Multiply",
+          "description": "Stunning Gradient art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 7,
+          "image": "gradient-mulit-colour.jpg"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+          "sku": "nanum36",
+          "name": "Inner Bloom",
+          "description": "Stunning Geometric art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 7,
+          "image": "inner-bloom.jpg"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+          "sku": "nanum37",
+          "name": "Red vs Blue",
+          "description": "Stunning Liquify art to add some colour to your home.  Printed on Canson Baryta Fine Art Paper.  Please note: Posters are unframed",
+          "price": 16.00,
+          "category": 7,
+          "image": "liquify-red-vs-blue.jpg"
+        }
+    }
+]

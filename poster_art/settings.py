@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 
     # Other
     'storages',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [

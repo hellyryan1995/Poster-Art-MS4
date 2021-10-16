@@ -8,7 +8,7 @@
     <div id="topnav" class="row d-lg-flex border-line">
         <div class="col-2 col-lg-3 my-auto py-1 py-lg-0">
             <a href="{% url 'home' %}" class="nav-link-mobile main-logo">
-                <img src="/static/images/posterart-logo-black.svg" height="40" alt="Poster Art Logo">
+                <img src="{{ MEDIA_URL }}posterart-logo-black.svg" height="40" alt="Poster Art Logo">
             </a>
         </div>
         <!-- Icons -->
@@ -84,34 +84,34 @@
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
-                                <img src="/static/images/posterart-logo-black.svg" height="40" alt="Poster Art Logo">
+                                <img src="{{ MEDIA_URL }}posterart-logo-black.svg" height="40" alt="Poster Art Logo">
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body text-start">
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li>
-                                        <a href="#" class="home-link menu-text">Home</a>
+                                        <a href="{% url 'home' %}" class="home-link menu-text">Home</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="menu-text" href="#" id="poster-products" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
+                                        <a class="menu-text" href="#" id="poster-products" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
                                             Posters
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="poster-products">
-                                            <a href="#" class="dropdown-item menu-text">Liquify</a>
-                                            <a href="#" class="dropdown-item menu-text">Cubism</a>
-                                            <a href="#" class="dropdown-item menu-text">Gradients</a>
-                                            <a href="#" class="dropdown-item menu-text">Geometric</a>
-                                            <a href="#" class="dropdown-item menu-text">Collage</a>
-                                            <a href="#" class="dropdown-item menu-text">All Posters</a>
+                                            <a href="{% url 'products' %}?category=liguify" class="dropdown-item menu-text">Liquify</a>
+                                            <a href="{% url 'products' %}?category=cubism" class="dropdown-item menu-text">Cubism</a>
+                                            <a href="{% url 'products' %}?category=gradients" class="dropdown-item menu-text">Gradients</a>
+                                            <a href="{% url 'products' %}?category=geometric" class="dropdown-item menu-text">Geometric</a>
+                                            <a href="{% url 'products' %}?category=collage" class="dropdown-item menu-text">Collage</a>
+                                            <a href="{% url 'products' %}?category=liguify,cubism,gradients,geometric,collage" class="dropdown-item menu-text">All Posters</a>
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="#" class="frame-link menu-text">Frames</a>
+                                        <a href="{% url 'products' %}?category=frames" class="frame-link menu-text">Frames</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="new-link menu-text">New Arrivals</a>
+                                        <a href="{% url 'products' %}?category=new_arrivals" class="new-link menu-text">New Arrivals</a>
                                     </li>
                                     <li>
                                         <a href="#" class="about-link menu-text">About</a>

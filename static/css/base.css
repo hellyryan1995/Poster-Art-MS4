@@ -3,10 +3,6 @@ html {
     height: 100%;
 }
 
-body {
-    margin-top: 140px;
-}
-
 .background {
     background: url('/static/images/home-banner.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -204,4 +200,8 @@ a {
 
 .line-divider {
     color: #fff;
+}
+
+.margin-styling {
+    margin-top: 140px;
 }

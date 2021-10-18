@@ -229,3 +229,24 @@ a {
 .form-select-lg {
     font-size: 1rem;
 }
+
+.btt-button {
+    height: 40px;
+    width: 62px;
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    background: #DADADA;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
+.to-top {
+    font-size: 30px;
+}
+
+.product-count {
+    text-transform: uppercase;
+}

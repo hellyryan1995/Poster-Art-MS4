@@ -62,6 +62,10 @@ i {
     border: solid 2px #111111;
 }
 
+.margin-styling {
+    margin-top: 140px;
+}
+
 /* ---------------------------------------- Header Styling */
 
 
@@ -194,14 +198,10 @@ a {
     transition: transform .8s;
 }
 
-.card-title:hover {
-    color: #111111;
+.product-description {
+    font-size: 18px;
 }
 
 .line-divider {
     color: #fff;
-}
-
-.margin-styling {
-    margin-top: 140px;
 }

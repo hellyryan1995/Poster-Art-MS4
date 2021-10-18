@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row margin-styling">
+        <div class="col-12 col-md-7 col-lg-7">
+            <div class="image-container">
+                {% if product.image %}
+                <a href="{{ product.image.url }}" target="_blank">
+                    <img src="{{ product.image.url }}" class="img-fluid" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img src="{{ MEDIA_URL }}no-image.jpg" class="card-img-top img-fluid" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-5">
+            <h2 class="card-title">{{ product.name }} - Poster Art</h2>
+            <h4 class="card-text">€{{ product.price }}</h4>
+            <hr class="line-divider">
+            <p>Size</p>
+            <select class="form-select form-select-lg mb-3" id="size" name="size" aria-label=".form-select-lg example">
+                <option selected>Select Poster Size</option>
+                {% for size in product.size %}
+                <option value="{{ size }}">{{ size }}</option>
+                {% endfor %}
+            </select>
+            <hr class="line-divider">
+            <p class="product-description">{{ product.description }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

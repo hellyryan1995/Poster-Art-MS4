@@ -32,7 +32,7 @@
             <h4 class="card-text">€{{ product.price }}</h4>
             <hr class="line-divider">
             <p>Size</p>
-            <select class="form-select form-select-lg mb-3" id="size" name="size" aria-label=".form-select-lg example">
+            <select class="form-select form-select-lg mb-3 rounded-0" id="size" name="size" aria-label=".form-select-lg example">
                 <option selected>Select Poster Size</option>
                 {% for size in product.size %}
                 <option value="{{ size }}">{{ size }}</option>

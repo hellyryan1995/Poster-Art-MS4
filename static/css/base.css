@@ -4,7 +4,7 @@ html {
 }
 
 .background {
-    background: url('/media/home-banner.jpg') no-repeat center center fixed;
+    background: url('/static/images/home-banner.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     background-position-y: 0px;
@@ -37,6 +37,7 @@ h4 {
     color: #111111;
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 span {
@@ -97,7 +98,7 @@ i {
 }
 
 .border-line {
-    border-bottom: solid 1px #5B5B5B;
+    border-bottom: solid 1px #DADADA;
     background: #fff;
 }
 
@@ -249,4 +250,30 @@ a {
 
 .product-count {
     text-transform: uppercase;
+}
+
+/* ---------------------------------------- Footer Styling */
+
+.footer-styling {
+    margin-top: 50px;
+    padding: 50px;
+    border-top: solid 1px #DADADA;
+}
+
+.quick-links {
+    color: #5B5B5B;
+
+}
+
+.list-styling {
+    list-style: none;
+    padding-left: 0rem;
+}
+
+.socials {
+    padding-right: 15px;
+}
+
+.socials:hover {
+    opacity: 0.7;
 }

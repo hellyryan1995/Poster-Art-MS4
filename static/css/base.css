@@ -83,6 +83,31 @@ i {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, #111111 0px 0px 0px 1px;
 }
 
+.btn-outline-black {
+    color: #111111;
+    border: solid 1px #111111;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px!important;
+}
+
+.btn-outline-black:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, #111111 0px 0px 0px 1px;
+}
+
+.add-to-cart {
+    color: #fff;
+    background: #111111;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px!important;
+}
+
+.add-to-cart:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, #111111 0px 0px 0px 1px;
+    color: #fff;
+}
+
 .margin-styling {
     margin-top: 140px;
 }
@@ -237,6 +262,10 @@ i {
 
 .form-select-lg {
     font-size: 1rem;
+}
+
+.input-group-lg>.form-control{
+    font-size: 1rem!important;
 }
 
 .btt-button {

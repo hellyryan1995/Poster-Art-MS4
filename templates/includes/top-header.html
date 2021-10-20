@@ -105,7 +105,7 @@
                         <div><i class="fi fi-rs-shopping-bag"></i></div>
                         <p class=" quantity">
                             {% if grand_total %}
-                            ${{ grand_total|floatformat:2 }}
+                            {{ product_count }}
                             {% else %}
                             <!-- 0 -->
                             {% endif %}

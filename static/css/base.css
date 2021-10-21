@@ -384,6 +384,15 @@ th {
     border-top: solid 1px #dadada;
     border-bottom: solid 1px #dadada;
 }
+
+.cart-width {
+    width: 14%!important;
+}
+
+.update-link, .remove-item {
+    cursor: pointer;
+}
+
 /* ---------------------------------------- Media Queries */
 
 @media (max-width: 991px) {

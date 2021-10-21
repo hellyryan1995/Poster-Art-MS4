@@ -36,11 +36,10 @@
                 <div class="form-row">
                     <div class="col-12">
                         <p class="">Size</p>
-                        <select class="form-select form-select-lg rounded-0" id="size" name="size" aria-label=".form-select-lg">
-                            <option selected>Select Poster Size</option>
-                            {% for size in product.size %}
-                            <option value="{{ size }}">{{ size }}</option>
-                            {% endfor %}
+                        <select class="form-select form-select-lg rounded-0" id="id_product_size" name="product_size">
+                            <option value="A4" selected>A4 - 21.0 x 29.7cm</option>
+                            <option value="A3">A3 - 29.7 x 42.0cm</option>
+                            <option value="A2">A2 - 42.0 x 59.4cm</option>
                         </select>
                     </div>
                     <div class="col-12">

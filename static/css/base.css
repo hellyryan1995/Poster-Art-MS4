@@ -134,6 +134,11 @@ i {
     line-height: 1.1;
 }
 
+.no-quantity {
+    position: absolute;
+    display: none;
+}
+
 .dropdown-menu.show {
     display: block;
     border-radius: 0;

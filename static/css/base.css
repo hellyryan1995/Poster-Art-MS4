@@ -112,8 +112,55 @@ i {
     color: #fff;
 }
 
+/* ---------------------------------------- Toasts Styling */
+
 .margin-styling {
     margin-top: 140px;
+}
+
+.success {
+    color: #6D7F80;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.error {
+    color: #806d6d;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.info {
+    color: #786d80;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.warning {
+    color: #806d6d;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.message-container {
+    position: fixed;
+    z-index: 99999999999;
+    right: 35px;
+    top: 102px;
+}
+
+.toast-body {
+    background: #fff;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* ---------------------------------------- Header Styling */

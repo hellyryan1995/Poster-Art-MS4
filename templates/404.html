@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row margin-styling">
+        <div class="col-12">
+            <div class="text-center">
+                <h2 class="mb-5">404</h2>
+                <p>Sorry, We couldn't find this page. But don't worry, you can find plenty of other things on our Product Page</p>
+                <a href="{% url 'products' %}" class="shop-button btn btn-sm rounded-0 text-uppercase py-3 mt-3">Have A Look</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

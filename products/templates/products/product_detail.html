@@ -31,7 +31,7 @@
         <!-- Product Name & Price -->
         <div class="col-12 col-md-4 col-lg-4">
             <h2 class="card-title">{{ product.name }}</h2>
-            <h4 class="card-text">€{{ product.price }}</h4>
+            <h4 class="card-text" data-item_id="{{ item.item_id }}" id="price">€{{ product.price }}</h4>
             <hr class="line-divider">
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                 {% csrf_token %}
@@ -40,9 +40,9 @@
                         <!-- Product Size -->
                         <p class="">Size</p>
                         <select class="form-select form-select-lg rounded-0" id="id_product_size" name="product_size">
-                            <option value="A4" selected>A4 - 21.0 x 29.7cm</option>
-                            <option value="A3">A3 - 29.7 x 42.0cm</option>
-                            <option value="A2">A2 - 42.0 x 59.4cm</option>
+                            <option value="A4" data-price="0"selected>A4 - 21.0 x 29.7cm</option>
+                            <option value="A3" data-price="12" class="a3">A3 - 29.7 x 42.0cm</option>
+                            <option value="A2" data-price="24" class="a2">A2 - 42.0 x 59.4cm</option>
                         </select>
                     </div>
                     <div class="col-12">
@@ -94,4 +94,5 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
+{% include 'products/includes/price_varient_script.html' %}
 {% endblock %}

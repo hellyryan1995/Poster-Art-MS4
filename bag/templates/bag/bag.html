@@ -41,7 +41,7 @@
                             {% for item in bag_items %}
                                 <tr class="cart-border">
                                     <td class="pt-5 pb-5 cart-width">
-                                        <img class="img-fluid" width="150"  src="{{ item.product.image.url }}">
+                                        <img class="img-fluid" width="150" src="{{ item.product.image.url }}">
                                     </td>
                                     <td class="pt-5 pb-5 w-50">
                                         <h5 class="card-title">{{ item.product.name }}</h5>
@@ -88,7 +88,7 @@
                                         </a>
                                     </td>
                                     <td class="pt-5 pb-5">
-                                        <p class="my-0 text-end">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                        <p class="my-0 text-end" data-item_id="{{ item.item_id }}" id="price">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -126,6 +126,7 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
+{% include 'products/includes/price_varient_script.html' %}
 
 <script type="text/javascript">
     // Update quantity on click

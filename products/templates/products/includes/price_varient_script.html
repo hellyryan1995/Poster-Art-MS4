@@ -1,0 +1,16 @@
+<script type="text/javascript">
+
+// Help from Stackoverflow
+var basePrice = +($('#price').html()).replace(/[^0-9\.]+/g,"");
+
+$("#id_product_size").change(function() {
+  newPrice = basePrice;
+  $("#id_product_size option:selected").each(function() {
+    newPrice += +$(this).attr('data-price');
+  });
+  $("#price").html('€' + newPrice.toFixed(2));
+  var itemId = $(this).data('item_id');
+  handleEnableDisable(itemId);
+});
+
+</script>

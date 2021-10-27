@@ -11,7 +11,8 @@ $("#id_product_size").change(function() {
   $("#price").html('€' + newPrice.toFixed(2));
   var itemId = $(this).data('item_id');
   handleEnableDisable(itemId);
-  console.log(newPrice);
+  console.log("Base Price", basePrice);
+  console.log("New Price", newPrice);
 });
 
 // var form = document.getElementById('product_form');
@@ -26,7 +27,6 @@ $("#id_product_size").change(function() {
 //         'csrfmiddlewaretoken': csrfToken,
 //         'price': price,
 //     };
-//     console.log("Price Submited");
 
 //     var url = '/bag/add_to_bag/${itemId}/';
 

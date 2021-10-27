@@ -112,6 +112,10 @@ i {
     color: #fff;
 }
 
+.please-note {
+    color: #A74646;
+}
+
 /* ---------------------------------------- Toasts Styling */
 
 .margin-styling {
@@ -125,19 +129,19 @@ i {
 }
 
 .error {
-    color: #806d6d;
+    color: #A74646;
     font-size: 14px;
     padding-right: 10px;
 }
 
 .info {
-    color: #786d80;
+    color: #4680A7;
     font-size: 14px;
     padding-right: 10px;
 }
 
 .warning {
-    color: #806d6d;
+    color: #A74646;
     font-size: 14px;
     padding-right: 10px;
 }

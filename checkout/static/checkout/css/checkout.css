@@ -1,0 +1,71 @@
+.form-control {
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    padding: 0.600rem 0.75rem;
+    font-size: 15px;
+    color: #6c757d;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #DADADA;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.text-info {
+    color: #6d7f80 !important;
+}
+
+.text-info:hover {
+    color: #111 !important;
+}
+
+.form-check-label {
+    color: #5B5B5B;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.order-sum {
+    background-color: #DADADA;
+    opacity: 1;
+}
+
+.fieldset-label {
+    color: #111 !important;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.bg-style {
+    background-color: #fafafa;
+    padding: 5%;
+    background-size: cover;
+}
+
+/* ----------------------------- Stripe Payment Styling*/
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0.600rem 0.75rem;
+  border: 1px solid #DADADA;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}

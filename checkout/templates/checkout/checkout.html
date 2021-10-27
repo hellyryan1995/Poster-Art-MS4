@@ -111,10 +111,10 @@
                 <!-- Order Button -->
                 <div class="submit-button text-right mt-5 mb-2 px-3">
                     <button id="submit-button" class="btn add-to-cart rounded-0 text-uppercase mt-1 btn-width">
-                        <span class="font-weight-bold">Complete Order</span>
+                        <span>Complete Order</span>
                     </button>                  
                     <a href="{% url 'view_bag' %}" class="">
-                        <span class="font-weight-bold text-uppercase px-5">Adjust Bag</span>
+                        <span class="text-uppercase px-5">Adjust Bag</span>
                     </a>
                     <p class="small mt-2">
                         <span class="icon">
@@ -124,9 +124,14 @@
                     </p>
                 </div>
             </form>
-            </div>
         </div>
     </div>
+</div>
+<div id="loading-overlay">
+        <div class="loadingio-spinner-rolling-kgl3c55bqp9 loading-spinner"><div class="ldio-7zsx8btnw6v">
+        <div></div>
+        </div></div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}

@@ -69,3 +69,16 @@
 .stripe-style-input::placeholder {
     color: #aab7c4;
 }
+
+.order-confirmation-wrapper {
+    background-color: #fafafa;
+    border: solid 1px #DADADA;
+}
+
+.order-positions {
+    margin: 0 auto;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}

@@ -192,9 +192,15 @@
         <div class="row">
             <hr class="line-divider">
 			<div class="col-12 text-center">
+                {% if from_profile %}
+                <a href="{% url 'profile' %}" class="btn add-to-cart rounded-0 text-uppercase mt-1 btn-width">
+					<span>Back to Profile</span>
+				</a>
+                {% else %}
 				<a href="{% url 'products' %}?category=frames" class="btn add-to-cart rounded-0 text-uppercase mt-1 btn-width">
 					<span>Why not frame it?</span>
 				</a>
+                {% endif %}
 			</div>
 		</div>
     </div>

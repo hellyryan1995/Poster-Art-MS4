@@ -258,6 +258,10 @@ i {
     color: #111111;
 }
 
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
 .dropdown-menu.show {
     border-bottom: solid 1px #DADADA !important;
 }
@@ -418,6 +422,62 @@ th {
 
 .update-link, .remove-item {
     cursor: pointer;
+}
+
+/* ---------------------------------------- Alluath Form Styling */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #6c757d;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #DADADA;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+    color: #ffffff!important;
+    border: solid 1px #111111;
+    background: #111;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px!important;
+    width: 250px;
+    margin-top: 12px;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #111; /* text-info */
 }
 
 /* ---------------------------------------- Footer Styling */

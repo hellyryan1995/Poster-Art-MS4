@@ -81,10 +81,11 @@
                 <fieldset class="px-3 mb-5">
                     <!-- Shipping Address -->
                     <legend class="fieldset-label">Shipping Address</legend>
-                    {{ order_form.address | as_crispy_field }}
+                    {{ order_form.street_address1 | as_crispy_field }}
+                    {{ order_form.street_address2 | as_crispy_field }}
                     {{ order_form.town_or_city | as_crispy_field }}
                     {{ order_form.county | as_crispy_field }}
-                    {{ order_form.eircode | as_crispy_field }}
+                    {{ order_form.postcode | as_crispy_field }}
                     {{ order_form.country | as_crispy_field }}
                     <div class="form-check form-check-inline ml-0">
                         {% if user.is_authenticated %}

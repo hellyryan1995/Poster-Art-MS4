@@ -1,5 +1,16 @@
 #profile-update-form .form-control {
-    color: #5B5B5B;
+
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    padding: 0.600rem 0.75rem;
+    font-size: 15px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #DADADA;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: 'Work Sans', sans-serif;
 }
 
 #profile-update-form input::placeholder {
@@ -13,4 +24,10 @@
 
 #id_default_country option:first-child {
     color: #aab7c4;
+}
+
+.bg-style {
+    background-color: #fafafa;
+    padding: 5%;
+    background-size: cover;
 }

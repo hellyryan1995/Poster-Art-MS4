@@ -387,6 +387,39 @@ i {
     border: solid 1px #dadada;
 }
 
+/* ---------------------------------------- About Styling */
+
+.about-txt {
+    font-size: 30px;
+}
+
+/* ---------------------------------------- Cart Styling */
+
+.cart-titles {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #5B5B5B;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+th {
+    font-weight: 400!important;
+}
+
+.cart-border {
+    border-top: solid 1px #dadada;
+    border-bottom: solid 1px #dadada;
+}
+
+.cart-width {
+    width: 14%!important;
+}
+
+.update-link, .remove-item {
+    cursor: pointer;
+}
+
 /* ---------------------------------------- Footer Styling */
 
 .footer-styling {
@@ -415,33 +448,6 @@ i {
 
 footer{
     margin-top: auto;
-}
-
-/* ---------------------------------------- Cart Styling */
-
-.cart-titles {
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #5B5B5B;
-    font-family: 'Work Sans', sans-serif;
-    
-}
-
-th {
-    font-weight: 400!important;
-}
-
-.cart-border {
-    border-top: solid 1px #dadada;
-    border-bottom: solid 1px #dadada;
-}
-
-.cart-width {
-    width: 14%!important;
-}
-
-.update-link, .remove-item {
-    cursor: pointer;
 }
 
 /* ---------------------------------------- Media Queries */

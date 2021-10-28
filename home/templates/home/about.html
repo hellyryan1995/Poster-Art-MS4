@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row margin-styling">
+        <div class="col-12 col-md-6 col-lg-6">
+            <img src="{{ MEDIA_URL }}about-image.jpg" class="card-img-top img-fluid" alt="Art Neo Text">
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+            <h2>About</h2>
+            <hr class="line-divider">
+            <p class="about-txt">
+                Poster Art is a digital art print company printing the highest quality posters and unique complimentary frames.  
+                Our passion is specified in modern vibrant abstract digital art to give your home that final touch.
+            </p>
+            <P class="about-txt">
+                All our art is printed Printed on Canson Baryta Fine Art Paper to ensure all strong colours truly show.
+            </P>
+            <hr class="line-divider">
+            <h4>
+                <a href="{% url 'products' %}?category=liguify,cubism,gradients,geometric,collage" class="shop-button btn btn-lg rounded-0 text-uppercase py-3">View Posters</a>
+            </h4>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-8 offset-2 text-center">
+            <h2>Submit Your Work</h2>
+            <p class="">
+                If you would like to sell your work through Poster Art on a commission base please submit you work for more details
+            </p>
+            <P class="">
+                Email: submit@posterart.ie
+            </P>
+        </div>
+    </div>
+</div>
+{% endblock %}

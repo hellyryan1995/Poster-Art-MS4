@@ -83,6 +83,11 @@
     font-weight: bold;
 }
 
+select:invalid,
+select option[value=""] {
+  color: #ADBAC6;
+}
+
 #loading-overlay {
 	display: none;
 	position: fixed;

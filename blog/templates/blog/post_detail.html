@@ -65,7 +65,7 @@
                 <hr>
                 <h4 class="card-title">Add Comment</h4>
                 {% if request.user.is_anonymous %}
-                <p class="mt-5 fs-4 mb-5">Please
+                <p class="mt-5 mb-5">Please
                     <a  href="{% url 'account_login' %}"> Login </a> or
                     <a  href="{% url 'account_signup' %}">Signup</a>
                     To add a comment.

@@ -72,7 +72,7 @@
                 </p>
                 {% else %}
                 <div class="commentform">
-                    <form id="comment-form" method="POST" action="{% url 'post_detail' post.slug %}">
+                    <form id="comment-form" method="POST" action="{% url 'post_detail' post_id=post.id %}">
                         {% csrf_token %}
                         {{ form|crispy }}
                         <button class="btn add-to-cart rounded-0 text-uppercase mt-1 btn-width" type="submit">Add comment</button>

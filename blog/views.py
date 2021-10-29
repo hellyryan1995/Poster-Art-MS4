@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 
-from .forms import CommentForm, Post, PostForm
+from .forms import CommentForm, PostForm
 from .models import Post, Comment
 # Create your views here.
 
@@ -22,6 +22,7 @@ def post_detail(request, post_id):
     '''A view to show the specific post in detail '''
 
     post = get_object_or_404(Post, pk=post_id)
+
     if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():
@@ -33,20 +34,19 @@ def post_detail(request, post_id):
             return redirect(reverse('post_detail', args=[post_id]))
         else:
             messages.error(request,
-                        "Error adding your comment please try again")
+                           "Error adding your comment please try again")
             return redirect(reverse('post_detail', args=[post_id]))
 
     comments = Comment.objects.filter(post=post)
 
     form = CommentForm()
-    template = "blog/post_detail.html"
     context = {
         'post': post,
         'form': form,
         'comments': comments,
     }
 
-    return render(request, template, context)
+    return render(request, 'blog/post_detail.html', context)
 
 
 def add_post(request):

@@ -51,7 +51,17 @@ def post_detail(request, post_id):
 
 def add_post(request):
     """ Add a post to the store """
-    form = PostForm()
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added a new post!')
+            return redirect(reverse('add_post'))
+        else:
+            messages.error(request, 'Failed to add post. Please ensure the form is valid.')
+    else:
+        form = PostForm()
+        
     template = 'blog/add_post.html'
     context = {
         'form': form,

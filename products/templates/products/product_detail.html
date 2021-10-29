@@ -32,6 +32,12 @@
         <div class="col-12 col-md-4 col-lg-4">
             <h2 class="card-title">{{ product.name }}</h2>
             <h4 class="card-text" data-item_id="{{ item.item_id }}" id="price">€{{ product.price }}</h4>
+            {% if request.user.is_superuser %}
+                <small class="ml-3">
+                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                </small>
+            {% endif %}
             <hr class="line-divider">
             <form class="form" id="product_form" action="{% url 'add_to_bag' product.id %}" method="POST">
                 {% csrf_token %}

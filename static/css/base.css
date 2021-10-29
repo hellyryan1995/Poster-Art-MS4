@@ -284,12 +284,9 @@ input[name='q']::placeholder {
     text-decoration: none;
 }
 
-.form-control {
-    margin-bottom: 12px;
-}
-
 label {
     margin-bottom: 6px;
+    margin-top: 10px;
 }
 /* ---------------------------------------- Banner Styling */
 

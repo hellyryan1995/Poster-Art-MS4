@@ -284,6 +284,13 @@ input[name='q']::placeholder {
     text-decoration: none;
 }
 
+.form-control {
+    margin-bottom: 12px;
+}
+
+label {
+    margin-bottom: 6px;
+}
 /* ---------------------------------------- Banner Styling */
 
 .header-text {

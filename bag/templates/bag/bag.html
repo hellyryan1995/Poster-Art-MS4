@@ -41,7 +41,11 @@
                             {% for item in bag_items %}
                                 <tr class="cart-border">
                                     <td class="pt-5 pb-5 cart-width">
+                                    {% if item.product.image %}
                                         <img class="img-fluid" width="150" src="{{ item.product.image.url }}">
+                                    {% else %}
+                                        <img class="img-fluid" width="150" src="{{ MEDIA_URL }}no-image.png">
+                                    {% endif %}
                                     </td>
                                     <td class="pt-5 pb-5 w-50">
                                         <h5 class="card-title">{{ item.product.name }}</h5>

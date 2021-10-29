@@ -29,9 +29,9 @@
                         <div class="row g-0">
                         <div class="col-md-4">
                         {% if post.image %}
-                            <img src="{{ post.image.url }}" class="card-img-top img-fluid rounded-0" alt="{{ post.slug }}">
+                            <img src="{{ post.image.url }}" class="card-img-top img-fluid rounded-0" alt="{{ post.title }}">
                         {% else %}
-                            <img src="{{ MEDIA_URL }}no_image.png" alt="{{ post.slug }}">
+                            <img src="{{ MEDIA_URL }}no-image.png" alt="{{ post.title }}">
                         {% endif %}
                         </div>
                         <div class="col-md-8">

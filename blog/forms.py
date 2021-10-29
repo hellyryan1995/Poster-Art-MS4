@@ -23,12 +23,8 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = {
-            'intro',
-            'title',
-            'body',
-            'image',
-        }
+        fields = '__all__'
+        widgets = {'slug': forms.HiddenInput()}
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

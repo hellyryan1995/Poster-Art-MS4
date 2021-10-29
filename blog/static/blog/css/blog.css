@@ -1,0 +1,21 @@
+
+.commentform .form-control {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #6c757d;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #DADADA;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: 'Work Sans', sans-serif;
+}
+
+label {
+    display: none!important;
+}
+
+.fs-6 {
+    font-size: 0.7rem!important;
+}

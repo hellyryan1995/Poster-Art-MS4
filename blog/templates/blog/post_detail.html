@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row margin-styling">
+            <div class="col">
+                <hr class="line-divider">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+            {% if post.image %}
+                <img src="{{ post.image.url }}" class="card-img-top img-fluid rounded-0" alt="{{ post.slug }}">
+            {% else %}
+                <img src="{{ MEDIA_URL }}no_image.png" alt="{{ post.slug }}">
+            {% endif %}
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>{{ post.title }}</h2>
+                <p class="card-text"><small class="text-muted">Posted at {{ post.date_added }}</small></p>
+                <p class="card-text">{{ post.body }}</p>
+            </div>
+        </div>
+        <hr class="line-divider">
+        <div class="row">
+            <div class="col-12 col-xl-8">
+                <h4 class="card-title">View Comments</h4>
+                {% for comment in post.comments.all %}
+                    <article>
+                        <div class="media-conten">
+                            <div class="content">
+                                <hr>
+                                <h5>
+                                    <strong>{{ comment.user }}</strong>
+                                </h5>
+                                <p class="text-muted fs-6">
+                                    {{ comment.date_added }}
+                                </p>
+                                <p>
+                                    {{ comment.comment }}
+                                </p>
+                                <hr>
+                            </div>
+                        </div>
+                    </article>
+                {% empty %}
+                    <div class="notification">
+                        <p>No Comments yet!</p>
+                    </div>
+                {% endfor %}
+                <hr>
+                <h4 class="card-title">Add Comment</h4>
+                {% if request.user.is_anonymous %}
+                <p class="mt-5 fs-4 mb-5">Please
+                    <a  href="{% url 'account_login' %}"> Login </a> or
+                    <a  href="{% url 'account_signup' %}">Signup</a>
+                    To add a comment.
+                </p>
+                {% else %}
+                <div class="commentform">
+                    <form id="comment-form" method="POST" action="{% url 'post_detail' post.slug %}">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <button class="btn add-to-cart rounded-0 text-uppercase mt-1 btn-width" type="submit">Add comment</button>
+                    </form>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

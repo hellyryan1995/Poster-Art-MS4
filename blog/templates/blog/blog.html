@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -24,13 +24,24 @@
         </div>
         <div class="row">
             {% for post in posts %}
-                <div class="col">
-                    <div class="card mb-3">
-                        <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.slug }}">
-                        <div class="card-body">
-                        <h5 class="card-title">{{ post.title }}</h5>
-                        <p class="card-text">{{ post.intro }}</p>
-                        <p class="card-text"><small class="text-muted">Post at {{ post.date_added }}</small></p>
+                <div class="col-12 col-xl-8">
+                    <div class="card mb-3 rounded-0 border">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                        {% if post.image %}
+                            <img src="{{ post.image.url }}" class="card-img-top img-fluid rounded-0" alt="{{ post.slug }}">
+                        {% else %}
+                            <img src="{{ MEDIA_URL }}no_image.png" alt="{{ post.slug }}">
+                        {% endif %}
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h4 class="card-title">{{ post.title }}</h4>
+                            <p class="card-text"><small class="text-muted">Posted at {{ post.date_added }}</small></p>
+                            <p class="card-text">{{ post.intro|truncatechars:220 }}</p>
+                            <a href="{% url 'post_detail' post.slug %}" class="btn add-to-cart rounded-0 text-uppercase mt-1">Read More</a>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 class Post(models.Model):
     image = models.ImageField(null=True, blank=True)
     title = models.CharField(max_length=255)
-    slug = models.SlugField(null=True, blank=True)
+    slug = models.TextField(null=True, blank=True)
     intro = models.TextField(null=False, blank=False, default='')
     body = models.TextField(null=False, blank=False, default='')
     date_added = models.DateTimeField(auto_now_add=True)
@@ -32,4 +32,3 @@ class Comment(models.Model):
     
     def __str__(self):
         return f"Comment on {self.post.title} by {self.user}"
-

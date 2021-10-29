@@ -1,7 +1,7 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 
-from .forms import CommentForm
+from .forms import CommentForm, Post, PostForm
 from .models import Post, Comment
 # Create your views here.
 
@@ -18,10 +18,10 @@ def blog(request):
     return render(request, template, context)
 
 
-def post_detail(request, slug):
+def post_detail(request, post_id):
     '''A view to show the specific post in detail '''
 
-    post = get_object_or_404(Post, slug=slug)
+    post = get_object_or_404(Post, pk=post_id)
     if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():
@@ -30,11 +30,11 @@ def post_detail(request, slug):
             comment.user = request.user
             form.save()
             messages.success(request, "Your comment has been added.")
-            return redirect('post_detail', slug=post.slug)
+            return redirect(reverse('post_detail', args=[post_id]))
         else:
             messages.error(request,
                         "Error adding your comment please try again")
-            return redirect('post_detail', slug=post.slug)
+            return redirect(reverse('post_detail', args=[post_id]))
 
     comments = Comment.objects.filter(post=post)
 
@@ -44,6 +44,17 @@ def post_detail(request, slug):
         'post': post,
         'form': form,
         'comments': comments,
+    }
+
+    return render(request, template, context)
+
+
+def add_post(request):
+    """ Add a post to the store """
+    form = PostForm()
+    template = 'blog/add_post.html'
+    context = {
+        'form': form,
     }
 
     return render(request, template, context)

@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
-
+from django.contrib.auth.decorators import login_required
 from .forms import CommentForm, PostForm
 from .models import Post, Comment
 # Create your views here.
@@ -49,8 +49,13 @@ def post_detail(request, post_id):
     return render(request, 'blog/post_detail.html', context)
 
 
+@login_required
 def add_post(request):
     """ Add a post to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
@@ -70,8 +75,12 @@ def add_post(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_post(request, post_id):
     """ Edit a post in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
 
     post = get_object_or_404(Post, pk=post_id)
     if request.method == 'POST':
@@ -95,8 +104,13 @@ def edit_post(request, post_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_post(request, post_id):
     """ Delete a post from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     post = get_object_or_404(Post, pk=post_id)
     post.delete()
     messages.success(request, 'Post deleted!')

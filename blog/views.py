@@ -68,3 +68,28 @@ def add_post(request):
     }
 
     return render(request, template, context)
+
+
+def edit_post(request, post_id):
+    """ Edit a post in the store """
+
+    post = get_object_or_404(Post, pk=post_id)
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES, instance=post)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated post!')
+            return redirect(reverse('post_detail', args=[post_id]))
+        else:
+            messages.error(request, 'Failed to update post. Please ensure the form is valid.')
+    else:
+        form = PostForm(instance=post)
+        messages.info(request, f'You are editing {post.title}')
+
+    template = 'blog/edit_post.html'
+    context = {
+        'form': form,
+        'post': post,
+    }
+
+    return render(request, template, context)

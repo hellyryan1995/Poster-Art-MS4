@@ -15,31 +15,4 @@ $("#id_product_size").change(function() {
   console.log("New Price", newPrice);
 });
 
-// var form = document.getElementById('product_form');
-
-// // Carry over price to other pages
-// form.addEventListener('submit', function(ev) {
-//     ev.preventDefault();
-//     newPrice = basePrice;
-//     var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
-//     var price = $("#price").html('€' + newPrice.toFixed(2));
-
-//     var postData = {
-//         'csrfmiddlewaretoken': csrfToken,
-//         'price': newPrice,
-//     };
-
-//     var url = '/bag/add_to_bag/${itemId}/';
-//     console.log(price);
-//     console.log(price[0]);
-//     console.log(price);
-
-//     $.post(url, postData)
-//     .done(function () {
-//       location.reload();
-//       console.log("Success");
-//     })
-
-// });
-
-// </script>
+</script>

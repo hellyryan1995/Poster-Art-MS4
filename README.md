@@ -151,6 +151,17 @@ The main design of the website is black and white allowing the colours from the 
 
 ## Testing
 
+* Devices tested on:
+    * Macbook Pro 13"
+    * Lg 27" Monitor
+    * iPhone 11
+    * All devices in inspector tool.
+
+* Browsers Tested on:
+    * Google Chrome
+    * Safari
+    * Firefox
+
 ### User's Stories
 
 ### Manual Testing
@@ -165,6 +176,21 @@ The main design of the website is black and white allowing the colours from the 
 
 ### Content
 
+* [This](https://www.youtube.com/watch?v=m3hhLE1KR5Q&list=PL8qSL3acJhtSnIyoGc4G2JK_nyvD5wypZ&index=1&ab_channel=CodeWithStein) was used to help me add the comments to the blog page.
+
 ### Media
 
+* [Unsplash](https://unsplash.com/)
+    * This was used for product images.
+
+* [Pexels](https://www.pexels.com/)
+    * This was used for product images.
+
+* [Freepik](https://www.freepik.com/home)
+    * This was used frame mockups.
+
 ### Acknowledgements
+
+* Help from some students in the slack chat.
+* I recieved help from the tutor support.
+* Alot of help from the boutique ado lessons.

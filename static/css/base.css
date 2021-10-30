@@ -566,9 +566,6 @@ footer{
         width: 200px;
     }
 
-    .w-50 {
-        width: 70%!important;
-    }
 }
 
 @media (max-width: 320px){

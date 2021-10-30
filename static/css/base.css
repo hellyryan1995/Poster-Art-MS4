@@ -116,6 +116,15 @@ i {
     color: #A74646;
 }
 
+/* ---------------------------------------- Home Styling */
+
+.home-text {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    text-shadow: 2px 4px 4px rgba(0,0,0,0.2),
+    0px -5px 10px rgba(255,255,255,0.15);
+}
+
 /* ---------------------------------------- Toasts Styling */
 
 .margin-styling {

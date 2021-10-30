@@ -12,6 +12,7 @@
 {% endblock %}
 
 {% block content %}
+<!-- Banner -->
 <div class="background"> 
     <div class="container h-100">
         <div class="row h-100">
@@ -25,6 +26,96 @@
                     </h4>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<!-- About Section -->
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-12 col-lg-6">
+            <h1>About <br>Us</h1>
+        </div>
+        <div class="col-12 col-lg-6">
+            <p class="about-txt">
+                Poster Art is a digital art print company printing the highest quality posters and unique complimentary frames.  
+                Our passion is specified in modern vibrant abstract digital art to give your home that final touch.
+            </p>
+            <P class="about-txt">
+                All our art is printed Printed on Canson Baryta Fine Art Paper to ensure all strong colours truly show.
+            </P>
+            <hr class="line-divider">
+            <h4>
+                <a href="{% url 'products' %}?category=liguify,cubism,gradients,geometric,collage" class="shop-button btn btn-lg rounded-0 text-uppercase py-3">View Posters</a>
+            </h4>
+        </div>
+    </div>
+</div>
+<!-- Poster Section -->
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-12 col-lg-6 mb-4">
+            <a href="{% url 'products' %}?category=liguify">
+                <div class="card bg-dark text-white border-0 image-hover">
+                    <img src="{{ MEDIA_URL }}liquify-banner.jpg" class="card-img img-fluid" alt="Liquify Art">
+                    <div class="card-img-overlay border-0">
+                      <h4 class="card-title home-text">Liquify</h4>
+                    </div>
+                  </div>
+            </a>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+            <a href="{% url 'products' %}?category=cubism">
+                <div class="card bg-dark text-white border-0 image-hover">
+                    <img src="{{ MEDIA_URL }}cubism-banner.jpg" class="card-img img-fluid" alt="Cubism Art">
+                    <div class="card-img-overlay border-0">
+                      <h4 class="card-title home-text">Cubism</h4>
+                    </div>
+                  </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-4">
+            <a href="{% url 'products' %}?category=gradients">
+                <div class="card bg-dark text-white border-0 image-hover">
+                    <img src="{{ MEDIA_URL }}gradient-banner.jpg" class="card-img img-fluid" alt="Gradient Art">
+                    <div class="card-img-overlay border-0">
+                      <h4 class="card-title home-text">Gradient</h4>
+                    </div>
+                  </div>
+            </a>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+            <a href="{% url 'products' %}?category=geometric">
+                <div class="card bg-dark text-white border-0 image-hover">
+                    <img src="{{ MEDIA_URL }}geo-banner.jpg" class="card-img img-fluid" alt="Geometric Art">
+                    <div class="card-img-overlay border-0">
+                      <h4 class="card-title home-text">Geometric</h4>
+                    </div>
+                  </div>
+            </a>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-12 col-lg-6 mb-4">
+            <a href="{% url 'products' %}?category=collage">
+                <div class="card bg-dark text-white border-0 image-hover">
+                    <img src="{{ MEDIA_URL }}collage-banner.jpg" class="card-img img-fluid" alt="Collage Art">
+                    <div class="card-img-overlay border-0">
+                      <h4 class="card-title home-text">Collage</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+            <a href="{% url 'products' %}?category=new_arrivals">
+                <div class="card bg-dark text-white border-0 image-hover">
+                    <img src="{{ MEDIA_URL }}new-arrival-banner.jpg" class="card-img img-fluid" alt="New Arrivals Art">
+                    <div class="card-img-overlay border-0">
+                      <h4 class="card-title home-text">New Arrivals</h4>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>

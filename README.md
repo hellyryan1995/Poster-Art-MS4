@@ -104,6 +104,51 @@ The main design of the website is black and white allowing the colours from the 
 
 ## Technologies Used
 
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+    * For Structuring the site.
+
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+    * For Styling the Site.
+
+* [JS](https://en.wikipedia.org/wiki/JavaScript)
+    * For programming functions
+
+* [Bootstrap](https://getbootstrap.com/)
+    * For Grid Layout & Components.
+
+* [Google Font](https://fonts.google.com/)
+    * For selected font.
+
+* [JQuery](https://jquery.com/)
+    * Used for certain sections within the script.js file
+
+* [Github](https://github.com/)
+    * Storing project on.
+
+* [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiA3smABhCjARIsAKtrg6JfbE3I-05NWUBL17jlkE6uDkROXDoD5vXo7UJxVKIjsLVwujyaus0aAhAiEALw_wcB)
+    * Creating wireframes on.
+
+* [Google Chrome Developer Tool](https://developers.google.com/web/tools/chrome-devtools)
+    * Checking site is responsive on multiple different devices.
+
+* [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
+    * Creating Poster Art Logo
+
+* [Flat Icon](https://www.flaticon.com/uicons)
+    * Using the Icons
+
+* [Heroku](https://dashboard.heroku.com/apps)
+    * For Deployment
+
+* [Amazon AWS](https://aws.amazon.com/?nc2=h_lg)
+    * For Storing all media and static files
+
+* [Django](https://www.djangoproject.com/)
+    * Using its framework and app
+
+* [Stripe](https://stripe.com/en-ie)
+    * For payment system
+
 ## Testing
 
 ### User's Stories

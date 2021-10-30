@@ -164,11 +164,131 @@ The main design of the website is black and white allowing the colours from the 
 
 ### User's Stories
 
+* The navigation is clear at the top of the site with a navbar on mobile
+* Login and sign up pages are available, users logged in can access there profile page with shipping details and order history
+* You can logout when finished on the website.
+* Search icon displayed and when clicked displays a full bar to search for a product.
+* bag and checkout page is is available for users to purchase there order.
+* New Arrivals displayed within the website.
+* Blog can is showing the latest posts, users can comment on the post is they wish to.
+* Super users can create, update and delete products.
+* Super users can create, update and delete blogs.
+* email verification then users log in.
+
 ### Manual Testing
+
+1. Buttons
+    * All links follow to the correct page.
+    * Responds on all devices.
+
+2. Links
+    * All links follow to the correct page.
+    * Burger Menu dislpayed on mobile view.
+    * All products display in there correct category.
+
+3. Search
+    * Searching shows results from title and description.
+
+    ![](static/images/testing/search-results.png)
+
+4. Products
+    * All product display in there correct category.
+
+    ![](static/images/testing/category.png)
+
+    * Product Ammount per page is displayed within the top left of the page.
+    * Click the product takes you to the product in full detail where you can select the size and quantity.
+    * Clicking add to cart send to bag and quanity amount is displayed on the bag icon.
+    ![](static/images/testing/bag-icon.png)
+
+5. Bag
+    * Updating the quantity with increase the total price.
+    ![](static/images/testing/quantity.png)
+
+    * Bags under the price of €50 will be displayed with a text info on how much to spend for free shipping.
+    ![](static/images/testing/free-shipping.png)
+
+6. Checkout
+    * Filling in the contact info and submiting without a correct email prompts a warning.
+    ![](static/images/testing/incorrect-form.png)
+
+    * When for is correct we are sent to a thank you page with a success message.
+    ![](static/images/testing/thank-you.png)
+
+7. Profile
+    * Within profile users delivery information is saved and can be updated.
+    ![](static/images/testing/save-info.png)
+    * Order history is also displayed.
+
+8. Pop Up
+    * When products are added to the cart then a success message pops up.
+    ![](static/images/testing/pop-up.png)
+
+9. Login/Register
+    * Users can easily Login by providing there username and password.
+    * User registering to the site provides email, username and password, If re enter email or password is incorrect and error is displayed.
+    ![](static/images/testing/register-login.png)
+
+    * When registered you will recieve a verification email to confirm you account.
+    ![](static/images/testing/confirm-email.png)
+
+10. Super Users
+    * When a super users is logged in they recieve access to product managment and blog management.
+    ![](static/images/testing/super-user.png)
+
+    * within product management users can add a new product by filling in the form.
+    ![](static/images/testing/product-fill-up.png)
+
+    * Clicking add, adds the products.
+    ![](static/images/testing/product-add.png)
+
+    * This works the same for posts.
+    * within the product, super users can also edit and delete the product.
+    ![](static/images/testing/edit-delete.png)
+
+    * Clicking edit takes you to the form with the product info save in there.
+    ![](static/images/testing/edit-product.png)
+
+    * Clicking delete removes product.
+    ![](static/images/testing/delete-product.png)
 
 ### Testing Code
 
+* W3C Markup Validator
+    * [Home](https://validator.w3.org/nu/?doc=https%3A%2F%2Frh-poster-art-ms4.herokuapp.com%2F)
+    * [Products](https://validator.w3.org/nu/?doc=https%3A%2F%2Frh-poster-art-ms4.herokuapp.com%2Fproducts%2F)
+    * [Blog](https://validator.w3.org/nu/?doc=https%3A%2F%2Frh-poster-art-ms4.herokuapp.com%2Fblog%2F)
+    * [Profile](https://validator.w3.org/nu/?doc=https%3A%2F%2Frh-poster-art-ms4.herokuapp.com%2Fprofile%2F)
+    * [Sign In](https://validator.w3.org/nu/?doc=https%3A%2F%2Frh-poster-art-ms4.herokuapp.com%2Faccounts%2Flogin%2F)
+    * [Bag](https://validator.w3.org/nu/?doc=https%3A%2F%2Frh-poster-art-ms4.herokuapp.com%2Fbag%2F)
+    * [Checkout](https://validator.w3.org/nu/?doc=https%3A%2F%2Frh-poster-art-ms4.herokuapp.com%2Fcheckout%2F)
+
+* W3C CSS Validator
+
+![CSS Validator Results](static/images/testing/css-validator.png)
+
 ### Bugs Discovered
+
+* Problem 1 - I wanted to change the price depending on the size, using this code worked but the price wouldnt carry over into the checkout page
+
+```
+// Help from Stackoverflow
+var basePrice = +($('#price').html()).replace(/[^0-9\.]+/g,"");
+
+$("#id_product_size").change(function() {
+  newPrice = basePrice;
+  $("#id_product_size option:selected").each(function() {
+    newPrice += +$(this).attr('data-price');
+  });
+  $("#price").html('€' + newPrice.toFixed(2));
+  var itemId = $(this).data('item_id');
+  handleEnableDisable(itemId);
+  console.log("Base Price", basePrice);
+  console.log("New Price", newPrice);
+});
+```
+
+* Problem 1 - Unfortunatley I didnt have enough time to solve it.
 
 ## Deployment
 

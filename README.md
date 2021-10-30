@@ -4,9 +4,15 @@ Poster Art is an E-commerce business based around selling digital abstract art p
 
 Users can choose between a variety of different themed abstract art and what size they want to be printed, if they wish to frame it they can also purchase a frame.
 
-[>> View the live site here <<](#)
+My application features e-commerce functionality, payments using stripe, confirmation emails, CRUD functionality for admin to add blog posts and stock items, and an admin section, for the admin user to access database records.
 
+* for the accessor I have included admin login details in the comment section when submitting the project.
 
+* To test purchase products type 4242 4242 4242 4242
+
+[>> View the live site here <<](https://rh-poster-art-ms4.herokuapp.com/)
+
+![](static/images/home-mockup.png)
 
 ## UX
 
@@ -80,7 +86,21 @@ The main design of the website is black and white allowing the colours from the 
 
 ### Existing Features
 
+* Feature 1 - A home app featuring a shop now banner taking you to the product page and a collect of the posters all linking to the specific poster designs.
+* Feature 2 - A Products app displaying all products available which for super users can add and delete them.
+* Feature 3 - A Profile app where logged in users can save there shipping address and view previous orders.
+* Feature 4 - A login/signup app where users and login or create a new account if they dont have one already, A verification email will be sent.
+* Feature 5 - A Bag app where users can view there product, size, quantity and amount.
+* Feature 6 - A Checkout app where using can purchase there order.
+* Feature 7 - A Blog app where users can view blog posts and comment when logged in, super users can add, edit and delete posts.
+* Feature 8 - A Thank You section for after the users has purchased there order, displaying there order.
+* Feature 9 - A About page giving info into the company.
+* Feature 10 - Search Functionality
+* Feature 11 - Pop up notification when any activity happens, reassuring users of any actions made within the website.
+
 ### Features Left to Implement
+
+* If I had more time I wanted to add price change options depending on the product size.
 
 ## Technologies Used
 
